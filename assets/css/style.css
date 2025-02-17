@@ -207,6 +207,7 @@ html {
 	animation-range: 0 200px;
 
 	.navbar {
+
 		justify-content: space-between;
 
 		.navbar__logo {
@@ -216,12 +217,13 @@ html {
 		}
 
 		.navbar__menu {
+
 			position: fixed;
 			top: -500%;
 			left: 0;
 			width: 100%;
 			border-radius: 0 0 12px 12px;
-			background-color: transparent;
+			background-color: var(--secondary-color);
 			box-shadow: 0px 1px 9px 2px #00000024;
 			padding: 2rem 0;
 			transition: all 0.6s;
@@ -486,9 +488,9 @@ html {
 
 		.home__image {
 			width: clamp(min(320px, 100%), 85vw, 445px);
-    max-width: 100%;
-    margin: 0 auto;
-    /* display: flex;
+			max-width: 100%;
+			margin: 0 auto;
+			/* display: flex;
     justify-content: center;
     position: relative; */
 
@@ -499,11 +501,12 @@ html {
 				/* Mantiene el cuerpo en su posición normal */
 				/* z-index: 1; */
 			}
-			
+
 
 			.arm {
-				width: 82%;  /* Ajusta el ancho a 200 píxeles */
-				height: auto; 
+				width: 82%;
+				/* Ajusta el ancho a 200 píxeles */
+				height: auto;
 				position: absolute;
 				/* Para superponerlo sobre el cuerpo */
 				top: 9%;
@@ -552,18 +555,19 @@ html {
 				text-transform: uppercase;
 				border-right: 4px solid;
 				white-space: nowrap;
-				width: 20ch;
+				width: 21ch;
 				animation: typing 4s infinite steps(15) alternate,
 					blink 0.5s infinite step-end alternate;
 				overflow: hidden;
 			}
+
 			.home__title__eng {
 				margin: 0 auto;
 				margin-bottom: var(--mr-2);
 				text-transform: uppercase;
 				border-right: 4px solid;
 				white-space: nowrap;
-				width: 13ch;
+				width: 16ch;
 				animation: typing 4s infinite steps(15) alternate,
 					blink 0.5s infinite step-end alternate;
 				overflow: hidden;
@@ -578,12 +582,15 @@ html {
 
 @keyframes wave {
 	0% {
-	  transform: rotate(0deg) translateY(0); /* Comienza sin desplazamiento */
+		transform: rotate(0deg) translateY(0);
+		/* Comienza sin desplazamiento */
 	}
+
 	100% {
-	  transform: rotate(6deg) translateY(-25px); /* Mueve hacia arriba para evitar caída */
+		transform: rotate(6deg) translateY(-25px);
+		/* Mueve hacia arriba para evitar caída */
 	}
-  }
+}
 
 @keyframes typing {
 	from {
@@ -738,12 +745,14 @@ html {
 			.projects__info {
 				padding: 1rem;
 
-				.projects__name{
+				.projects__name {
 					transition: color 0.3s;
+
 					&:hover {
 						color: var(--secondary-color)
 					}
 				}
+
 				.projects__buttons {
 					display: flex;
 					flex-wrap: wrap;
@@ -781,12 +790,45 @@ html {
 		gap: 2rem;
 
 		.contact__info {
-			.contatc__info-data {
+			.contact__info-data {
 				font-style: normal;
 				display: flex;
 				flex-direction: column;
 				gap: 1rem;
 				padding: 2rem 0;
+
+				.contact__info-item {
+					display: flex;
+					align-items: center;
+					gap: 0.5rem; /* Espacio entre el icono y el texto */
+				}
+				
+				.contact__info-item i {
+					color: black; /* Color inicial del icono */
+					font-size: 1.5rem; /* Ajusta el tamaño del icono si es necesario */
+					transition: color 0.3s;
+				}
+				
+				.contact__info-number a,
+				.contact__info-mail a {
+					color: black; /* Color inicial del enlace */
+					transition: color 0.3s;
+				}
+				
+				/* Evita que el enlace cambie de color después de ser visitado */
+				.contact__info-number a:visited,
+				.contact__info-mail a:visited {
+					color: black;
+				}
+				
+				/* Cambia el color del enlace y el icono al hacer hover */
+				.contact__info-item:hover i,
+				.contact__info-map:hover,
+				.contact__info-number a:hover,
+				.contact__info-mail a:hover {
+					color: var(--secondary-color);
+				}
+				
 			}
 		}
 
@@ -882,21 +924,21 @@ html {
 		background-color: var(--bg-color-section1);
 		position: relative;
 		overflow: hidden;
-	
-	
+
+
 		.home__container {
 			position: relative;
 			row-gap: 2rem;
 			padding: var(--header-height) 0 3rem;
-	
+
 			.home__image {
 				width: clamp(min(320px, 100%), 85vw, 445px);
-		max-width: 100%;
-		margin: 0 auto;
-		/* display: flex;
+				max-width: 100%;
+				margin: 0 auto;
+				/* display: flex;
 		justify-content: center;
 		position: relative; */
-	
+
 				.body {
 					width: 100%;
 					display: block;
@@ -904,11 +946,12 @@ html {
 					/* Mantiene el cuerpo en su posición normal */
 					/* z-index: 1; */
 				}
-				
-	
+
+
 				.arm {
-					width: 82%;  /* Ajusta el ancho a 200 píxeles */
-					height: auto; 
+					width: 82%;
+					/* Ajusta el ancho a 200 píxeles */
+					height: auto;
 					position: absolute;
 					/* Para superponerlo sobre el cuerpo */
 					top: 16%;
@@ -923,7 +966,7 @@ html {
 					animation: wave 1s infinite alternate ease-in-out;
 				}
 			}
-	
+
 		}
 	}
 }
@@ -933,21 +976,21 @@ html {
 		background-color: var(--bg-color-section1);
 		position: relative;
 		overflow: hidden;
-	
-	
+
+
 		.home__container {
 			position: relative;
 			row-gap: 2rem;
 			padding: var(--header-height) 0 3rem;
-	
+
 			.home__image {
 				width: clamp(min(320px, 100%), 85vw, 445px);
-		max-width: 100%;
-		margin: 0 auto;
-		/* display: flex;
+				max-width: 100%;
+				margin: 0 auto;
+				/* display: flex;
 		justify-content: center;
 		position: relative; */
-	
+
 				.body {
 					width: 100%;
 					display: block;
@@ -955,11 +998,12 @@ html {
 					/* Mantiene el cuerpo en su posición normal */
 					/* z-index: 1; */
 				}
-				
-	
+
+
 				.arm {
-					width: 45%;  /* Ajusta el ancho a 200 píxeles */
-					height: auto; 
+					width: 45%;
+					/* Ajusta el ancho a 200 píxeles */
+					height: auto;
 					position: absolute;
 					/* Para superponerlo sobre el cuerpo */
 					top: 19%;
@@ -974,7 +1018,7 @@ html {
 					animation: wave 1s infinite alternate ease-in-out;
 				}
 			}
-	
+
 		}
 	}
 }
@@ -991,6 +1035,7 @@ html {
 			.navbar__menu {
 				position: static;
 				border-radius: 0;
+				background-color: transparent;
 				color: var(--primary-color);
 				box-shadow: none;
 
@@ -1027,10 +1072,10 @@ html {
 					/* Mantiene el cuerpo en su posición normal */
 					/* z-index: 1; */
 				}
-				
-	
+
+
 				.arm {
-					
+
 					position: absolute;
 					/* Para superponerlo sobre el cuerpo */
 					top: 16%;
@@ -1044,11 +1089,11 @@ html {
 					animation: wave 1s infinite alternate ease-in-out;
 				}
 
-				
+
 			}
 
 			.home__social {
-			
+
 				position: relative;
 				top: 0;
 				left: 0;
@@ -1062,11 +1107,28 @@ html {
 			}
 
 			.home__info {
-				
+
 				.home__title {
 					margin-top: 2rem;
 					font-size: 2rem;
+					width: 20ch;
+					animation: typing 3.5s infinite steps(15) alternate,
+						blink 0.5s infinite step-end alternate;
+					overflow: hidden;
 				}
+
+
+				/* .home__title__eng {
+					margin: 0 auto;
+					margin-bottom: var(--mr-2);
+					text-transform: uppercase;
+					border-right: 4px solid;
+					white-space: nowrap;
+					width: 16ch;
+					animation: typing 4s infinite steps(15) alternate,
+						blink 0.5s infinite step-end alternate;
+					overflow: hidden;
+				} */
 
 				.home__description {
 					font-size: 1.3rem;
@@ -1078,13 +1140,16 @@ html {
 
 	@keyframes wave {
 		0% {
-		  transform: rotate(0deg) translateY(0); /* Comienza sin desplazamiento */
+			transform: rotate(0deg) translateY(0);
+			/* Comienza sin desplazamiento */
 		}
+
 		100% {
-		  transform: rotate(6deg) translateY(-30px); /* Mueve hacia arriba para evitar caída */
+			transform: rotate(6deg) translateY(-30px);
+			/* Mueve hacia arriba para evitar caída */
 		}
-	  }
-	
+	}
+
 	.about {
 		.about__container {
 			.about__cards {
