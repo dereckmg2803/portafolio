@@ -490,6 +490,7 @@ html {
 			width: clamp(min(320px, 100%), 85vw, 445px);
 			max-width: 100%;
 			margin: 0 auto;
+			position: relative;
 			/* display: flex;
     justify-content: center;
     position: relative; */
@@ -505,20 +506,14 @@ html {
 
 			.arm {
 				width: 82%;
-				/* Ajusta el ancho a 200 píxeles */
-				height: auto;
-				position: absolute;
-				/* Para superponerlo sobre el cuerpo */
-				top: 9%;
-				/* Ajusta la posición según necesites */
-				right: 7%;
-				/* transform: scale(0.1);   */
-				/* Ajusta para que se alinee con el cuerpo */
-				transform-origin: bottom left;
-				/* Punto de pivote */
-				/* z-index: 1; */
-				/* Se asegura de estar encima del body */
-				animation: wave 1s infinite alternate ease-in-out;
+                height: auto;
+                position: absolute;
+                bottom: 2%;
+                right: 2%;
+                /* transform: scale(0.1); */
+                transform-origin: bottom left;
+                /* z-index: 1; */
+                animation: wave 1s infinite alternate ease-in-out;
 			}
 		}
 
@@ -919,57 +914,7 @@ html {
 }
 
 /* ============= Media Queries ============= */
-@media (width <=340px) {
-	.home {
-		background-color: var(--bg-color-section1);
-		position: relative;
-		overflow: hidden;
 
-
-		.home__container {
-			position: relative;
-			row-gap: 2rem;
-			padding: var(--header-height) 0 3rem;
-
-			.home__image {
-				width: clamp(min(320px, 100%), 85vw, 445px);
-				max-width: 100%;
-				margin: 0 auto;
-				/* display: flex;
-		justify-content: center;
-		position: relative; */
-
-				.body {
-					width: 100%;
-					display: block;
-					position: relative;
-					/* Mantiene el cuerpo en su posición normal */
-					/* z-index: 1; */
-				}
-
-
-				.arm {
-					width: 82%;
-					/* Ajusta el ancho a 200 píxeles */
-					height: auto;
-					position: absolute;
-					/* Para superponerlo sobre el cuerpo */
-					top: 16%;
-					/* Ajusta la posición según necesites */
-					right: 0%;
-					/* transform: scale(0.1);   */
-					/* Ajusta para que se alinee con el cuerpo */
-					transform-origin: bottom left;
-					/* Punto de pivote */
-					/* z-index: 1; */
-					/* Se asegura de estar encima del body */
-					animation: wave 1s infinite alternate ease-in-out;
-				}
-			}
-
-		}
-	}
-}
 
 @media (min-width: 510px) and (max-width: 767px) {
 	.home {
@@ -1001,21 +946,15 @@ html {
 
 
 				.arm {
-					width: 45%;
-					/* Ajusta el ancho a 200 píxeles */
-					height: auto;
-					position: absolute;
-					/* Para superponerlo sobre el cuerpo */
-					top: 19%;
-					/* Ajusta la posición según necesites */
-					right: 23%;
-					/* transform: scale(0.1);   */
-					/* Ajusta para que se alinee con el cuerpo */
-					transform-origin: bottom left;
-					/* Punto de pivote */
-					/* z-index: 1; */
-					/* Se asegura de estar encima del body */
-					animation: wave 1s infinite alternate ease-in-out;
+					                    /* width: 45%; */
+                    /* height: auto; */
+                    /* position: absolute; */
+                    /* top: 19%; */
+                    /* right: 23%; */
+                    /* transform: scale(0.1); */
+                    transform-origin: bottom left;
+                    /* z-index: 1; */
+                    animation: wave 1s infinite alternate ease-in-out;
 				}
 			}
 
@@ -1077,16 +1016,11 @@ html {
 				.arm {
 
 					position: absolute;
-					/* Para superponerlo sobre el cuerpo */
-					top: 16%;
-					/* Ajusta la posición según necesites */
-					right: 1%;
-					/* Ajusta para que se alinee con el cuerpo */
-					transform-origin: bottom left;
-					/* Punto de pivote */
-					/* z-index: 2; */
-					/* Se asegura de estar encima del body */
-					animation: wave 1s infinite alternate ease-in-out;
+                    /* bottom: 19% !important; */
+                    right: 1%;
+                    transform-origin: bottom left;
+                    /* z-index: 2; */
+                    animation: wave 1s infinite alternate ease-in-out;
 				}
 
 
