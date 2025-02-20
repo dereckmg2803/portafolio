@@ -799,21 +799,21 @@ html {
 				}
 				
 				.contact__info-item i {
-					color: black; /* Color inicial del icono */
+					color: var(--primary-color); /* Color inicial del icono */
 					font-size: 1.5rem; /* Ajusta el tamaño del icono si es necesario */
 					transition: color 0.3s;
 				}
 				
 				.contact__info-number a,
 				.contact__info-mail a {
-					color: black; /* Color inicial del enlace */
+					color: var(--primary-color); /* Color inicial del enlace */
 					transition: color 0.3s;
 				}
 				
 				/* Evita que el enlace cambie de color después de ser visitado */
 				.contact__info-number a:visited,
 				.contact__info-mail a:visited {
-					color: black;
+					color: var(--primary-color);
 				}
 				
 				/* Cambia el color del enlace y el icono al hacer hover */
@@ -889,11 +889,11 @@ html {
 				font-size: 1.5rem;
 
 				.footer__social-link {
-					color: var(--bg-color-section2);
+					color: var(--primary-color);
 					transition: text-shadow 0.3s;
 
 					&:hover {
-						text-shadow: 2px 3px #ee991a55;
+						text-shadow: 2px 3px #cccc30;
 					}
 				}
 
