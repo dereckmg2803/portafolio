@@ -354,7 +354,7 @@ html {
 					height: 20px;
 					position: relative;
 					display: block;
-					background: #ebebeb;
+					background: light-dark( #ffffffcc,  #242424);
 					border-radius: 20px;
 					box-shadow: inset 0px 2px 5px #00000066, inset 0px -2px 5px #ffffff66;
 					cursor: pointer;
