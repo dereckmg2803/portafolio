@@ -36,3 +36,15 @@ document.getElementById("language-toggle").addEventListener("change", function (
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".projects__button");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const repoUrl = button.getAttribute("data-repo");
+      if (repoUrl) {
+        window.open(repoUrl, "_blank");
+      }
+    });
+  });
+});

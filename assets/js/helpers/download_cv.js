@@ -2,8 +2,8 @@ export function downloadCV(event) {
     event.preventDefault(); // Evita que el enlace funcione normalmente
   
     const link = document.createElement('a');
-    link.href = '/assets/docs/Hdv.pdf'; // Ruta correcta a tu archivo PDF
-    link.download = 'Hdv.pdf'; // Nombre del archivo a descargar
+    link.href = '/assets/docs/DERECK_MONTES_CV.pdf'; // Ruta correcta a tu archivo PDF
+    link.download = 'DERECK_MONTES_CV.pdf'; // Nombre del archivo a descargar
   
     // Asegurarse de que el navegador soporte la descarga
     if (link.href) {

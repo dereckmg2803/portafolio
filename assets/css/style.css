@@ -508,8 +508,8 @@ html {
 				width: 82%;
                 height: auto;
                 position: absolute;
-                bottom: 2%;
-                right: 2%;
+                bottom: 2.2%;
+                right: 1%;
                 /* transform: scale(0.1); */
                 transform-origin: bottom left;
                 /* z-index: 1; */
@@ -536,12 +536,12 @@ html {
 			}
 		}
 
-		.home__info {
-
+		.home__info { 
 			.home__title,
 			.home__description {
 				text-align: center;
 				padding: 0 20px;
+				margin-bottom: 0;
 			}
 
 			.home__title {
@@ -582,7 +582,7 @@ html {
 	}
 
 	100% {
-		transform: rotate(6deg) translateY(-25px);
+		transform: rotate(6deg) translateY(-28px);
 		/* Mueve hacia arriba para evitar caída */
 	}
 }
@@ -889,7 +889,7 @@ html {
 				font-size: 1.5rem;
 
 				.footer__social-link {
-					color: var(--primary-color);
+					color: #ffffffcc;
 					transition: text-shadow 0.3s;
 
 					&:hover {
@@ -1017,7 +1017,8 @@ html {
 
 					position: absolute;
                     /* bottom: 19% !important; */
-                    right: 1%;
+                    right: 1.5%;
+					bottom: 1.2%;
                     transform-origin: bottom left;
                     /* z-index: 2; */
                     animation: wave 1s infinite alternate ease-in-out;
@@ -1140,6 +1141,10 @@ html {
 			.projects__project {
 				.projects__inner {
 					grid-template-columns: repeat(2, 1fr);
+
+				}
+				.projects__info{
+					text-align: justify;
 				}
 
 				&:nth-child(even) {
@@ -1149,7 +1154,7 @@ html {
 
 					.projects__info {
 						order: 1;
-						text-align: right;
+						
 					}
 
 					.projects__buttons {
