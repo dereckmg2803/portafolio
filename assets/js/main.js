@@ -2,10 +2,15 @@ import parallax from './components/parallax.js';
 import updateCurrentYear from './helpers/date_updater.js';
 // import loader from './helpers/loader.js';
 import resetToHome from './helpers/reload_page.js';
-import downloadCV from './helpers/download_cv.js'; 
+import downloadCV from './helpers/download_cv.js';
+import downloadCVEN from './helpers/download_cv_en.js';
 import activeMenu from './components/selected_menu.js';
+if (document.getElementById('download-cv')) {
+  document.getElementById('download-cv').addEventListener('click', downloadCV);
+} else {
+  document.getElementById('download-cv-en').addEventListener('click', downloadCVEN);
+}
 
-document.getElementById('download-cv').addEventListener('click', downloadCV);
 // loader();
 resetToHome();
 updateCurrentYear();
